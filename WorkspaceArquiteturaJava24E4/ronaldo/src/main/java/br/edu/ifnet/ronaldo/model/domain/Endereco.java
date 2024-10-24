@@ -1,6 +1,18 @@
 package br.edu.ifnet.ronaldo.model.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "TENDERECO")
 public class Endereco {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
 	private long cep;
 	private String logradouro;
 	private String bairro;
@@ -10,6 +22,12 @@ public class Endereco {
 	private String uf;
 	private String Pais;
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public long getCep() {
 		return cep;
 	}

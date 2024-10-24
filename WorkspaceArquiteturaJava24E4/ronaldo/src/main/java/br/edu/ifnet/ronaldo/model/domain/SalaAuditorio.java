@@ -3,10 +3,27 @@ package br.edu.ifnet.ronaldo.model.domain;
 import java.util.Date;
 import java.util.List;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
+
+@Entity
+@Table(name = "TSALA_AUDITORIO")
 public class SalaAuditorio extends Sala{
-	private int tempoMaximoReserva;
+	
+	private Integer tempoMaximoReserva;
 	private Date horaMinimaReserva;
 	private Date horaMaximaReserva;
+	
+	@ManyToOne
+    @JoinTable(
+        name = "TSALA_AUDITORIO_EQUIP", 
+        joinColumns = @JoinColumn(name = "sala_auditorio_id"), 
+        inverseJoinColumns = @JoinColumn(name = "equipamento_id")
+    )
 	private List<Equipamento> equipamentos;
 	
 	public int getTempoMaximoReserva() {
