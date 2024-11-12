@@ -1,0 +1,9 @@
+//código;descrição;ativo;escritório-cep;escritório-número;andar-número;sala-nome
+SJOXP35Z;TV 48" Philco;1;95059320;124;3;Reunião - Itália
+O1W14O4D;Teclado Logitech;1;95059320;124;3;Reunião - Itália
+P24I9KJF;Mouse Logitech;1;95059320;124;3;Reunião - Itália
+HHDGTSNC;Webcan Logitech;1;95059320;124;3;Reunião - Itália
+PLOXP35Z;TV 48" Philco;1;95059320;124;3;Reunião - Japão
+UHW14O4D;Teclado Logitech;1;95059320;124;3;Reunião - Japão
+LJ4I9KJF;Mouse Logitech;1;95059320;124;3;Reunião - Japão
+VBDGTSNC;Webcan Logitech;1;95059320;124;3;Reunião - Japão

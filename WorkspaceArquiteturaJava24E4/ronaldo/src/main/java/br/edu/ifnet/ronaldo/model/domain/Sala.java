@@ -2,6 +2,8 @@ package br.edu.ifnet.ronaldo.model.domain;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -20,7 +22,7 @@ import jakarta.persistence.Transient;
 @Entity
 @Table(name = "TSALA")
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Sala {
+public abstract class Sala{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,6 +34,7 @@ public abstract class Sala {
 	
 	@ManyToOne
 	@JoinColumn(name = "andar_id")
+	@JsonBackReference
 	private Andar andar;
 	
 	@Enumerated(EnumType.STRING)

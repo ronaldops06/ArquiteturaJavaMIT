@@ -15,8 +15,8 @@ public class Endereco {
 	private Integer id;
 	private long cep;
 	private String logradouro;
-	private String bairro;
 	private int numero;
+	private String bairro;
 	private String complemento;
 	private String cidade;
 	private String uf;

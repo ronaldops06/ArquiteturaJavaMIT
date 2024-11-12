@@ -1,0 +1,3 @@
+//cep;logradouro;número;bairro;complemento;cidade;uf;país
+95059320;José Bonifácio;124;Boa Vista;;Caxias do Sul;RS;Brasil
+95059280;Armindo Luiz Rech;138;Fátima;;Farroupilha;RS;Brasil

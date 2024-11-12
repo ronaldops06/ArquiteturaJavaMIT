@@ -2,6 +2,8 @@ package br.edu.ifnet.ronaldo.model.domain;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,6 +12,7 @@ import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
@@ -26,9 +29,10 @@ public class Mesa {
 	
 	@ManyToOne
 	@JoinColumn(name = "sala_escritorio_id")
+	@JsonBackReference
 	private SalaEscritorio salaEscritorio;
 	
-	@ManyToOne
+	@ManyToMany
     @JoinTable(
         name = "TMESA_FUNCAO", 
         joinColumns = @JoinColumn(name = "mesa_id"), 
@@ -36,7 +40,7 @@ public class Mesa {
     )
 	private List<Funcao> funcoes;
 	
-	@ManyToOne
+	@ManyToMany
     @JoinTable(
         name = "TMESA_EQUIPAMENTO", 
         joinColumns = @JoinColumn(name = "mesa_id"), 

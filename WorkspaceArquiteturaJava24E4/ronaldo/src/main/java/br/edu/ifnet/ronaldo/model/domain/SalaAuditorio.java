@@ -6,6 +6,7 @@ import java.util.List;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
@@ -18,7 +19,7 @@ public class SalaAuditorio extends Sala{
 	private Date horaMinimaReserva;
 	private Date horaMaximaReserva;
 	
-	@ManyToOne
+	@ManyToMany
     @JoinTable(
         name = "TSALA_AUDITORIO_EQUIP", 
         joinColumns = @JoinColumn(name = "sala_auditorio_id"), 
@@ -26,10 +27,10 @@ public class SalaAuditorio extends Sala{
     )
 	private List<Equipamento> equipamentos;
 	
-	public int getTempoMaximoReserva() {
+	public Integer getTempoMaximoReserva() {
 		return tempoMaximoReserva;
 	}
-	public void setTempoMaximoReserva(int tempoMaximoReserva) {
+	public void setTempoMaximoReserva(Integer tempoMaximoReserva) {
 		this.tempoMaximoReserva = tempoMaximoReserva;
 	}
 	public Date getHoraMinimaReserva() {

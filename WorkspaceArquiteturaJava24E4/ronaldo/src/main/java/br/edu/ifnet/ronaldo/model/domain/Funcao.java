@@ -1,5 +1,6 @@
 package br.edu.ifnet.ronaldo.model.domain;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -7,6 +8,7 @@ import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.Table;
 
+@Entity
 @Table(name = "TFUNCAO")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Funcao {

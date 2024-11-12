@@ -7,6 +7,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "TRESERVA")
@@ -15,9 +16,13 @@ public class Reserva {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	@Transient
 	private Pessoa pessoa;
+	@Transient
 	private Mesa mesa;
+	@Transient
 	private Sala sala;
+	@Transient
 	private Vaga vaga;
 	private Date DataInicio;
 	private Date DataFim;

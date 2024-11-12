@@ -1,0 +1,465 @@
+//código;descrição;ativo;escritório-cep;escritório-número;andar-número;sala-nome;mesa-local
+SJNRUOJJ;Cadeira;1;95059320;124;4;Escritório;A1
+APTAFKF0;Monitor 22" Samsung;1;95059320;124;4;Escritório;A1
+T42AOHYX;Teclado Logitech;1;95059320;124;4;Escritório;A1
+V5Q3BG0D;Mouse Logitech;1;95059320;124;4;Escritório;A1
+BRXFIRL3;Cadeira;1;95059320;124;4;Escritório;A2
+N8JKIL2O;Monitor 21" Samsung;1;95059320;124;4;Escritório;A2
+J3R1ZWO5;Teclado Dell;1;95059320;124;4;Escritório;A2
+Q473OICY;Mouse Dell;1;95059320;124;4;Escritório;A2
+7Q7FT5ZO;Cadeira;1;95059320;124;4;Escritório;A3
+VW1AL9SX;Monitor 19" Dell;1;95059320;124;4;Escritório;A3
+MIE7MD6J;Teclado Dell;1;95059320;124;4;Escritório;A3
+T4FFARKJ;Mouse HP;1;95059320;124;4;Escritório;A3
+F5WRH514;Cadeira;1;95059320;124;4;Escritório;A4
+KVTZ0VL6;Monitor 23" LG;1;95059320;124;4;Escritório;A4
+D6HODQLZ;Teclado Dell;1;95059320;124;4;Escritório;A4
+WM131B94;Mouse HP;1;95059320;124;4;Escritório;A4
+MKXD3FEI;Cadeira;1;95059320;124;4;Escritório;A5
+JNINXMNA;Monitor 23" Dell;1;95059320;124;4;Escritório;A5
+BR40MRKD;Teclado Logitech;1;95059320;124;4;Escritório;A5
+B3COA0PA;Mouse HP;1;95059320;124;4;Escritório;A5
+H5LZOTYE;Cadeira;1;95059320;124;4;Escritório;A6
+F0GM5QJP;Monitor 18" LG;1;95059320;124;4;Escritório;A6
+JW0VDFAO;Teclado HP;1;95059320;124;4;Escritório;A6
+09AZFBYJ;Mouse Dell;1;95059320;124;4;Escritório;A6
+8M0JIFOH;Cadeira;1;95059320;124;4;Escritório;A7
+1LK6DR8J;Monitor 18" LG;1;95059320;124;4;Escritório;A7
+2EHIT1S7;Teclado Logitech;1;95059320;124;4;Escritório;A7
+RZER714P;Mouse Logitech;1;95059320;124;4;Escritório;A7
+LJQASF79;Cadeira;1;95059320;124;4;Escritório;A8
+T8CIYJP3;Monitor 24" Dell;1;95059320;124;4;Escritório;A8
+NVEOOZ2K;Teclado Dell;1;95059320;124;4;Escritório;A8
+GS480QN3;Mouse Logitech;1;95059320;124;4;Escritório;A8
+EQPIYKXP;Cadeira;1;95059320;124;4;Escritório;B1
+34DQ9QE2;Monitor 20" Samsung;1;95059320;124;4;Escritório;B1
+KE0CH1TJ;Teclado Dell;1;95059320;124;4;Escritório;B1
+2GKGB2ZD;Mouse Dell;1;95059320;124;4;Escritório;B1
+H3P630PF;Cadeira;1;95059320;124;4;Escritório;B2
+UNAIB9UR;Monitor 21" HP;1;95059320;124;4;Escritório;B2
+9CNZEN2N;Teclado Logitech;1;95059320;124;4;Escritório;B2
+4KVXHP4K;Mouse Logitech;1;95059320;124;4;Escritório;B2
+OSQ0UO38;Cadeira;1;95059320;124;4;Escritório;B3
+WU4BVSKM;Monitor 18" Samsung;1;95059320;124;4;Escritório;B3
+TEYZYQWD;Teclado HP;1;95059320;124;4;Escritório;B3
+IUFH08LG;Mouse Dell;1;95059320;124;4;Escritório;B3
+EEYKD7JR;Cadeira;1;95059320;124;4;Escritório;B4
+6L0M74NU;Monitor 24" LG;1;95059320;124;4;Escritório;B4
+IDM4E9NU;Teclado HP;1;95059320;124;4;Escritório;B4
+UYVR64XY;Mouse Dell;1;95059320;124;4;Escritório;B4
+145VD1UN;Cadeira;1;95059320;124;4;Escritório;B5
+DSSMIFCP;Monitor 19" Dell;1;95059320;124;4;Escritório;B5
+XN8OOYB3;Teclado HP;1;95059320;124;4;Escritório;B5
+R68OEEZX;Mouse HP;1;95059320;124;4;Escritório;B5
+0J6POD31;Cadeira;1;95059320;124;4;Escritório;B6
+Q9G9P1JA;Monitor 23" LG;1;95059320;124;4;Escritório;B6
+WOX66HLV;Teclado Dell;1;95059320;124;4;Escritório;B6
+184TUHJ6;Mouse Dell;1;95059320;124;4;Escritório;B6
+O92DE6U8;Cadeira;1;95059320;124;4;Escritório;B7
+6U1Q7WJ3;Monitor 23" HP;1;95059320;124;4;Escritório;B7
+Y1J02LPH;Teclado HP;1;95059320;124;4;Escritório;B7
+26VIEISQ;Mouse HP;1;95059320;124;4;Escritório;B7
+ATY2GFDM;Cadeira;1;95059320;124;4;Escritório;B8
+BPLY7TCH;Monitor 24" Samsung;1;95059320;124;4;Escritório;B8
+4TRR1NLL;Teclado Logitech;1;95059320;124;4;Escritório;B8
+FPCFTG6P;Mouse Logitech;1;95059320;124;4;Escritório;B8
+VEL6VTN2;Cadeira;1;95059320;124;4;Escritório;C1
+VDMLVF7Q;Monitor 21" Samsung;1;95059320;124;4;Escritório;C1
+8AK28O70;Teclado HP;1;95059320;124;4;Escritório;C1
+DIZ8BGIB;Mouse Dell;1;95059320;124;4;Escritório;C1
+3SM05Y1F;Cadeira;1;95059320;124;4;Escritório;C2
+FWYW6GOF;Monitor 19" Dell;1;95059320;124;4;Escritório;C2
+DHH0K5N2;Teclado Logitech;1;95059320;124;4;Escritório;C2
+39HB9GAI;Mouse Dell;1;95059320;124;4;Escritório;C2
+E8Q9UT0Q;Cadeira;1;95059320;124;4;Escritório;C3
+LWFGQZ8P;Monitor 20" Samsung;1;95059320;124;4;Escritório;C3
+BY4K2GHD;Teclado Dell;1;95059320;124;4;Escritório;C3
+L6L7CUZL;Mouse HP;1;95059320;124;4;Escritório;C3
+D2ZBCBRC;Cadeira;1;95059320;124;4;Escritório;C4
+YOT13AQV;Monitor 20" HP;1;95059320;124;4;Escritório;C4
+7LO0AH0B;Teclado Logitech;1;95059320;124;4;Escritório;C4
+D25PBQI3;Mouse Dell;1;95059320;124;4;Escritório;C4
+SVXOFZ2S;Cadeira;1;95059320;124;4;Escritório;C5
+RAVI703U;Monitor 18" LG;1;95059320;124;4;Escritório;C5
+W6S4NC1E;Teclado Dell;1;95059320;124;4;Escritório;C5
+OUGIOII5;Mouse Dell;1;95059320;124;4;Escritório;C5
+FWCQ5UR8;Cadeira;1;95059320;124;4;Escritório;C6
+DYNZU0MA;Monitor 18" Samsung;1;95059320;124;4;Escritório;C6
+99P0M139;Teclado Logitech;1;95059320;124;4;Escritório;C6
+NJDO68LK;Mouse Dell;1;95059320;124;4;Escritório;C6
+TK8VUMUG;Cadeira;1;95059320;124;4;Escritório;C7
+8EGC3MB1;Monitor 18" Dell;1;95059320;124;4;Escritório;C7
+CN6RRWYT;Teclado Dell;1;95059320;124;4;Escritório;C7
+23FX63JO;Mouse HP;1;95059320;124;4;Escritório;C7
+VEEMALXZ;Cadeira;1;95059320;124;4;Escritório;C8
+MELWF3YL;Monitor 18" Dell;1;95059320;124;4;Escritório;C8
+6D42HAJ3;Teclado Dell;1;95059320;124;4;Escritório;C8
+0P1C958J;Mouse HP;1;95059320;124;4;Escritório;C8
+ZTHBCT8R;Cadeira;1;95059320;124;4;Escritório;D1
+WUWG3870;Monitor 22" LG;1;95059320;124;4;Escritório;D1
+UCWL04OZ;Teclado HP;1;95059320;124;4;Escritório;D1
+049EIFDI;Mouse Dell;1;95059320;124;4;Escritório;D1
+1W7QK3WQ;Cadeira;1;95059320;124;4;Escritório;D2
+STOLVQ7X;Monitor 24" Samsung;1;95059320;124;4;Escritório;D2
+TW8STYVQ;Teclado Dell;1;95059320;124;4;Escritório;D2
+Y3UI6U36;Mouse Logitech;1;95059320;124;4;Escritório;D2
+D780WBNI;Cadeira;1;95059320;124;4;Escritório;D3
+244V2IOA;Monitor 23" Dell;1;95059320;124;4;Escritório;D3
+DKR960TX;Teclado Logitech;1;95059320;124;4;Escritório;D3
+IBAPQEQ2;Mouse Dell;1;95059320;124;4;Escritório;D3
+T4412J68;Cadeira;1;95059320;124;4;Escritório;D4
+TFJ6145T;Monitor 20" Dell;1;95059320;124;4;Escritório;D4
+QDL8VBB4;Teclado Logitech;1;95059320;124;4;Escritório;D4
+JOH5NAU4;Mouse Dell;1;95059320;124;4;Escritório;D4
+S7OVTZ0Y;Cadeira;1;95059320;124;4;Escritório;D5
+MQG4O2EJ;Monitor 20" Dell;1;95059320;124;4;Escritório;D5
+RI8OVNLP;Teclado Dell;1;95059320;124;4;Escritório;D5
+9NN4V3CJ;Mouse HP;1;95059320;124;4;Escritório;D5
+AYHENXVE;Cadeira;1;95059320;124;4;Escritório;D6
+A4MJG3CE;Monitor 24" Samsung;1;95059320;124;4;Escritório;D6
+PYLBH6X4;Teclado HP;1;95059320;124;4;Escritório;D6
+HFDO2DRN;Mouse Logitech;1;95059320;124;4;Escritório;D6
+HB17XJFQ;Cadeira;1;95059320;124;4;Escritório;D7
+T85Z0ZYL;Monitor 19" LG;1;95059320;124;4;Escritório;D7
+5UWFRWOP;Teclado Dell;1;95059320;124;4;Escritório;D7
+6COH9GN3;Mouse Dell;1;95059320;124;4;Escritório;D7
+A2XP52C0;Cadeira;1;95059320;124;4;Escritório;D8
+O6CASQTL;Monitor 23" LG;1;95059320;124;4;Escritório;D8
+5WB64STJ;Teclado Logitech;1;95059320;124;4;Escritório;D8
+R7GD21WF;Mouse Dell;1;95059320;124;4;Escritório;D8
+5SALUUYN;Cadeira;1;95059320;124;4;Escritório;E1
+OBTC2VXM;Monitor 21" Samsung;1;95059320;124;4;Escritório;E1
+FZQ9I7UZ;Teclado Logitech;1;95059320;124;4;Escritório;E1
+4SPYM90A;Mouse HP;1;95059320;124;4;Escritório;E1
+W8L6NJU3;Cadeira;1;95059320;124;4;Escritório;E2
+9VREFF5Y;Monitor 24" Dell;1;95059320;124;4;Escritório;E2
+17PM9TEC;Teclado Logitech;1;95059320;124;4;Escritório;E2
+F3I1Q0YT;Mouse Logitech;1;95059320;124;4;Escritório;E2
+GZDY38T1;Cadeira;1;95059320;124;4;Escritório;E3
+Q1NHWS2H;Monitor 24" Dell;1;95059320;124;4;Escritório;E3
+XPLRY8TG;Teclado Logitech;1;95059320;124;4;Escritório;E3
+FEPY6ETM;Mouse HP;1;95059320;124;4;Escritório;E3
+MCEQV1S4;Cadeira;1;95059320;124;4;Escritório;E4
+INYM125Q;Monitor 20" Dell;1;95059320;124;4;Escritório;E4
+GAYT9CSV;Teclado Dell;1;95059320;124;4;Escritório;E4
+OZNLP8NA;Mouse Dell;1;95059320;124;4;Escritório;E4
+8W27WJPG;Cadeira;1;95059320;124;4;Escritório;E5
+6GS7XTQJ;Monitor 23" Dell;1;95059320;124;4;Escritório;E5
+LJIY4ZQE;Teclado Dell;1;95059320;124;4;Escritório;E5
+DGXIZPBP;Mouse Logitech;1;95059320;124;4;Escritório;E5
+3VSQ46JW;Cadeira;1;95059320;124;4;Escritório;E6
+2O4N0FSY;Monitor 20" Samsung;1;95059320;124;4;Escritório;E6
+LPNKD46Q;Teclado Dell;1;95059320;124;4;Escritório;E6
+UEOB5GLG;Mouse Dell;1;95059320;124;4;Escritório;E6
+E3XN784X;Cadeira;1;95059320;124;4;Escritório;E7
+ZJ4K8QNW;Monitor 23" Samsung;1;95059320;124;4;Escritório;E7
+ZT5JAKJ4;Teclado Logitech;1;95059320;124;4;Escritório;E7
+2GR5DCEB;Mouse Dell;1;95059320;124;4;Escritório;E7
+9HGXJ1UG;Cadeira;1;95059320;124;4;Escritório;E8
+BE1PR6TM;Monitor 24" Dell;1;95059320;124;4;Escritório;E8
+UWQLYIW2;Teclado Dell;1;95059320;124;4;Escritório;E8
+A5KNI6HM;Mouse Logitech;1;95059320;124;4;Escritório;E8
+CPDXHKDC;Cadeira;1;95059320;124;4;Escritório;F1
+UNQUM098;Monitor 20" Dell;1;95059320;124;4;Escritório;F1
+IBBTDP13;Teclado HP;1;95059320;124;4;Escritório;F1
+RDOJ96FW;Mouse HP;1;95059320;124;4;Escritório;F1
+PLUUA9AT;Cadeira;1;95059320;124;4;Escritório;F2
+2YOZM5KO;Monitor 18" Dell;1;95059320;124;4;Escritório;F2
+JQE3EQQK;Teclado Logitech;1;95059320;124;4;Escritório;F2
+U5WZ879Y;Mouse Logitech;1;95059320;124;4;Escritório;F2
+3HU95KCF;Cadeira;1;95059320;124;4;Escritório;F3
+JY7VKA9C;Monitor 22" Samsung;1;95059320;124;4;Escritório;F3
+GJAWSA9O;Teclado Logitech;1;95059320;124;4;Escritório;F3
+KHH876T8;Mouse Logitech;1;95059320;124;4;Escritório;F3
+90O5012T;Cadeira;1;95059320;124;4;Escritório;F4
+PKXIRARN;Monitor 23" Samsung;1;95059320;124;4;Escritório;F4
+4DCNYI59;Teclado Dell;1;95059320;124;4;Escritório;F4
+TQJO124W;Mouse HP;1;95059320;124;4;Escritório;F4
+O3U92Q2X;Cadeira;1;95059320;124;4;Escritório;F5
+69KDKT3U;Monitor 19" Samsung;1;95059320;124;4;Escritório;F5
+9WVI82DL;Teclado Dell;1;95059320;124;4;Escritório;F5
+YTY7NFEN;Mouse Dell;1;95059320;124;4;Escritório;F5
+RTYD3HKQ;Cadeira;1;95059320;124;4;Escritório;F6
+910HVGFL;Monitor 23" LG;1;95059320;124;4;Escritório;F6
+IWM7X8MW;Teclado Logitech;1;95059320;124;4;Escritório;F6
+K8S7NZ61;Mouse Dell;1;95059320;124;4;Escritório;F6
+3LT4F6US;Cadeira;1;95059320;124;4;Escritório;F7
+VDWF2L9K;Monitor 18" Samsung;1;95059320;124;4;Escritório;F7
+K2Q59HEG;Teclado HP;1;95059320;124;4;Escritório;F7
+XZ4IMXHD;Mouse HP;1;95059320;124;4;Escritório;F7
+MPIBHWTI;Cadeira;1;95059320;124;4;Escritório;F8
+NRF5SF5C;Monitor 22" Samsung;1;95059320;124;4;Escritório;F8
+96GAY1CE;Teclado HP;1;95059320;124;4;Escritório;F8
+B0ZE6JY9;Mouse Logitech;1;95059320;124;4;Escritório;F8
+SME7O8O7;Cadeira;1;95059320;124;4;Escritório;G1
+MPNSF9DT;Monitor 20" LG;1;95059320;124;4;Escritório;G1
+XQOCJXVC;Teclado HP;1;95059320;124;4;Escritório;G1
+YFCF6IC8;Mouse Dell;1;95059320;124;4;Escritório;G1
+JMQM2ZDG;Cadeira;1;95059320;124;4;Escritório;G2
+3RB0Y5KA;Monitor 22" LG;1;95059320;124;4;Escritório;G2
+ZNQU3F00;Teclado Logitech;1;95059320;124;4;Escritório;G2
+Y3DMBFH8;Mouse HP;1;95059320;124;4;Escritório;G2
+RVLFVS3B;Cadeira;1;95059320;124;4;Escritório;G3
+N1XE9ZIQ;Monitor 20" Samsung;1;95059320;124;4;Escritório;G3
+RLT3PWP5;Teclado Dell;1;95059320;124;4;Escritório;G3
+Z90N7MH6;Mouse Logitech;1;95059320;124;4;Escritório;G3
+03B3F65X;Cadeira;1;95059320;124;4;Escritório;G4
+TFV64ED6;Monitor 18" LG;1;95059320;124;4;Escritório;G4
+3OVKED2U;Teclado Dell;1;95059320;124;4;Escritório;G4
+3CHWP0II;Mouse Dell;1;95059320;124;4;Escritório;G4
+P361X9W4;Cadeira;1;95059320;124;4;Escritório;G5
+TC4NSUZI;Monitor 24" Dell;1;95059320;124;4;Escritório;G5
+D0K84I4F;Teclado Logitech;1;95059320;124;4;Escritório;G5
+SWXUFVQT;Mouse Dell;1;95059320;124;4;Escritório;G5
+OTZ4NP0M;Cadeira;1;95059320;124;4;Escritório;G6
+RZWOJQEA;Monitor 18" Samsung;1;95059320;124;4;Escritório;G6
+HAF6PFT6;Teclado Dell;1;95059320;124;4;Escritório;G6
+SRUVFAXD;Mouse Dell;1;95059320;124;4;Escritório;G6
+9PJO18U8;Cadeira;1;95059320;124;4;Escritório;G7
+7JWRJAJG;Monitor 24" HP;1;95059320;124;4;Escritório;G7
+1I2NPZ02;Teclado Logitech;1;95059320;124;4;Escritório;G7
+F8L8QNL7;Mouse Logitech;1;95059320;124;4;Escritório;G7
+OKXE39VB;Cadeira;1;95059320;124;4;Escritório;G8
+EXOOCPU9;Monitor 24" LG;1;95059320;124;4;Escritório;G8
+60CIH4OM;Teclado Logitech;1;95059320;124;4;Escritório;G8
+OC70YXA1;Mouse HP;1;95059320;124;4;Escritório;G8
+Y4091FM8;Cadeira;1;95059320;124;4;Escritório;H1
+SHS90Q7Y;Monitor 21" LG;1;95059320;124;4;Escritório;H1
+YP572JRS;Teclado Dell;1;95059320;124;4;Escritório;H1
+3BL3CZKU;Mouse HP;1;95059320;124;4;Escritório;H1
+72C07GMS;Cadeira;1;95059320;124;4;Escritório;H2
+TLXZK9CK;Monitor 19" Samsung;1;95059320;124;4;Escritório;H2
+HX6XIEUP;Teclado Dell;1;95059320;124;4;Escritório;H2
+X7I5N3UG;Mouse Logitech;1;95059320;124;4;Escritório;H2
+AJWEHVSZ;Cadeira;1;95059320;124;4;Escritório;H3
+LXES1MZE;Monitor 22" LG;1;95059320;124;4;Escritório;H3
+IWPW15ZY;Teclado Logitech;1;95059320;124;4;Escritório;H3
+BEESEDRC;Mouse Logitech;1;95059320;124;4;Escritório;H3
+6FCQLEH8;Cadeira;1;95059320;124;4;Escritório;H4
+16FWI4XW;Monitor 20" HP;1;95059320;124;4;Escritório;H4
+UABG2OI7;Teclado Dell;1;95059320;124;4;Escritório;H4
+LLTPM2NR;Mouse Logitech;1;95059320;124;4;Escritório;H4
+PULHUHL8;Cadeira;1;95059320;124;4;Escritório;H5
+UJI8CFK6;Monitor 24" LG;1;95059320;124;4;Escritório;H5
+QQ4PPC1S;Teclado Logitech;1;95059320;124;4;Escritório;H5
+F3J9QEXE;Mouse HP;1;95059320;124;4;Escritório;H5
+6Q4FL7O5;Cadeira;1;95059320;124;4;Escritório;H6
+39T5IMEB;Monitor 22" Dell;1;95059320;124;4;Escritório;H6
+3ANHHUK7;Teclado Dell;1;95059320;124;4;Escritório;H6
+JRSPHLF0;Mouse Logitech;1;95059320;124;4;Escritório;H6
+PV3O4GZI;Cadeira;1;95059320;124;4;Escritório;H7
+C28SI767;Monitor 19" Samsung;1;95059320;124;4;Escritório;H7
+HCPA5XJF;Teclado Dell;1;95059320;124;4;Escritório;H7
+JW5D9SIU;Mouse Dell;1;95059320;124;4;Escritório;H7
+KIRYC7P4;Cadeira;1;95059320;124;4;Escritório;H8
+FQ1O9UBD;Monitor 19" LG;1;95059320;124;4;Escritório;H8
+M5027NN0;Teclado HP;1;95059320;124;4;Escritório;H8
+Q7LNQ8JB;Mouse HP;1;95059320;124;4;Escritório;H8
+H6FTZ2HJ;Cadeira;1;95059320;124;4;Escritório;I1
+TBGBP0NG;Monitor 23" LG;1;95059320;124;4;Escritório;I1
+RZ24DMCN;Teclado HP;1;95059320;124;4;Escritório;I1
+HIX69661;Mouse Logitech;1;95059320;124;4;Escritório;I1
+1C5GD0VO;Cadeira;1;95059320;124;4;Escritório;I2
+XE3DUIQV;Monitor 20" Samsung;1;95059320;124;4;Escritório;I2
+1TPJV81U;Teclado Dell;1;95059320;124;4;Escritório;I2
+ZXIWZEO5;Mouse Dell;1;95059320;124;4;Escritório;I2
+013TRMLA;Cadeira;1;95059320;124;4;Escritório;I3
+LQQB0UVC;Monitor 18" Dell;1;95059320;124;4;Escritório;I3
+69K7GZFW;Teclado HP;1;95059320;124;4;Escritório;I3
+Z2PM5WIZ;Mouse Dell;1;95059320;124;4;Escritório;I3
+965HIY1T;Cadeira;1;95059320;124;4;Escritório;I4
+GARHKP5U;Monitor 19" LG;1;95059320;124;4;Escritório;I4
+L4S93XMN;Teclado HP;1;95059320;124;4;Escritório;I4
+M06WXUQU;Mouse Logitech;1;95059320;124;4;Escritório;I4
+LUMDI20T;Cadeira;1;95059320;124;4;Escritório;I5
+PEF2SDHC;Monitor 18" Dell;1;95059320;124;4;Escritório;I5
+WUVGYJOY;Teclado Dell;1;95059320;124;4;Escritório;I5
+6Y6KX7F1;Mouse Dell;1;95059320;124;4;Escritório;I5
+EK4LMPO1;Cadeira;1;95059320;124;4;Escritório;I6
+BX14B3WQ;Monitor 18" Dell;1;95059320;124;4;Escritório;I6
+4PZ63APS;Teclado Dell;1;95059320;124;4;Escritório;I6
+T4I3I618;Mouse Dell;1;95059320;124;4;Escritório;I6
+K5I0UN6J;Cadeira;1;95059320;124;4;Escritório;I7
+TQCP530U;Monitor 23" HP;1;95059320;124;4;Escritório;I7
+YKAQPCK1;Teclado HP;1;95059320;124;4;Escritório;I7
+XEZKGWGJ;Mouse HP;1;95059320;124;4;Escritório;I7
+LNLFI8OY;Cadeira;1;95059320;124;4;Escritório;I8
+FUM1FY8O;Monitor 20" HP;1;95059320;124;4;Escritório;I8
+K4IWNRT9;Teclado HP;1;95059320;124;4;Escritório;I8
+47DSZQCX;Mouse Logitech;1;95059320;124;4;Escritório;I8
+U3EWS12C;Cadeira;1;95059320;124;4;Escritório;J1
+8NK27A25;Monitor 18" HP;1;95059320;124;4;Escritório;J1
+EFA2JQ9N;Teclado Dell;1;95059320;124;4;Escritório;J1
+WNRDNV31;Mouse Logitech;1;95059320;124;4;Escritório;J1
+0BVKA76G;Cadeira;1;95059320;124;4;Escritório;J2
+TVDNR43Y;Monitor 21" LG;1;95059320;124;4;Escritório;J2
+CICG5OJ3;Teclado Dell;1;95059320;124;4;Escritório;J2
+EK4S5WOP;Mouse HP;1;95059320;124;4;Escritório;J2
+1TG2WDIR;Cadeira;1;95059320;124;4;Escritório;J3
+7LOLNYF9;Monitor 22" Dell;1;95059320;124;4;Escritório;J3
+C0B1WM3R;Teclado HP;1;95059320;124;4;Escritório;J3
+B5P0CMTO;Mouse Dell;1;95059320;124;4;Escritório;J3
+AWV1WD2I;Cadeira;1;95059320;124;4;Escritório;J4
+YUL9M40S;Monitor 20" HP;1;95059320;124;4;Escritório;J4
+WOYZEJRS;Teclado Logitech;1;95059320;124;4;Escritório;J4
+J0CB248Q;Mouse Logitech;1;95059320;124;4;Escritório;J4
+BJYL0V4F;Cadeira;1;95059320;124;4;Escritório;J5
+B2NJ0799;Monitor 22" LG;1;95059320;124;4;Escritório;J5
+D3HTLVKO;Teclado HP;1;95059320;124;4;Escritório;J5
+2RX4HU9B;Mouse Logitech;1;95059320;124;4;Escritório;J5
+WJA8NO5O;Cadeira;1;95059320;124;4;Escritório;J6
+KNCEHA51;Monitor 23" Dell;1;95059320;124;4;Escritório;J6
+5L4LAIU8;Teclado Logitech;1;95059320;124;4;Escritório;J6
+ID078NOZ;Mouse Dell;1;95059320;124;4;Escritório;J6
+1R020KM3;Cadeira;1;95059320;124;4;Escritório;J7
+FNWAMVWP;Monitor 24" Dell;1;95059320;124;4;Escritório;J7
+21VLFGKJ;Teclado HP;1;95059320;124;4;Escritório;J7
+AEJYE1QD;Mouse Logitech;1;95059320;124;4;Escritório;J7
+1Z2HZJ7Q;Cadeira;1;95059320;124;4;Escritório;J8
+ALEMO8X3;Monitor 21" LG;1;95059320;124;4;Escritório;J8
+B4VMPPBQ;Teclado Logitech;1;95059320;124;4;Escritório;J8
+QEGSSO6Z;Mouse Logitech;1;95059320;124;4;Escritório;J8
+8UYNQ9W9;Cadeira;1;95059320;124;4;Escritório;K1
+6S2Z0EEI;Monitor 18" Dell;1;95059320;124;4;Escritório;K1
+SSW3O2FT;Teclado HP;1;95059320;124;4;Escritório;K1
+FD0IYBHJ;Mouse Dell;1;95059320;124;4;Escritório;K1
+6CEZWFWW;Cadeira;1;95059320;124;4;Escritório;K2
+6LKAGU3M;Monitor 23" Samsung;1;95059320;124;4;Escritório;K2
+793KC91O;Teclado Logitech;1;95059320;124;4;Escritório;K2
+CKPBMIOP;Mouse HP;1;95059320;124;4;Escritório;K2
+8Q2PU5S5;Cadeira;1;95059320;124;4;Escritório;K3
+RZG6EDQ5;Monitor 21" LG;1;95059320;124;4;Escritório;K3
+5O3ARWWF;Teclado Dell;1;95059320;124;4;Escritório;K3
+RBYLN1RB;Mouse Dell;1;95059320;124;4;Escritório;K3
+4BSN9THF;Cadeira;1;95059320;124;4;Escritório;K4
+YEBE16BK;Monitor 23" LG;1;95059320;124;4;Escritório;K4
+0IWHW7WE;Teclado HP;1;95059320;124;4;Escritório;K4
+VZ7STVEW;Mouse HP;1;95059320;124;4;Escritório;K4
+7V58AP6O;Cadeira;1;95059320;124;4;Escritório;K5
+YOMBIXSK;Monitor 18" Samsung;1;95059320;124;4;Escritório;K5
+R7KOOM9D;Teclado Dell;1;95059320;124;4;Escritório;K5
+VAN4V984;Mouse Logitech;1;95059320;124;4;Escritório;K5
+7R59H8X0;Cadeira;1;95059320;124;4;Escritório;K6
+FHZMRBJM;Monitor 22" LG;1;95059320;124;4;Escritório;K6
+LA2IP7EZ;Teclado Logitech;1;95059320;124;4;Escritório;K6
+65P5KVQ6;Mouse Dell;1;95059320;124;4;Escritório;K6
+P11B1HLK;Cadeira;1;95059320;124;4;Escritório;K7
+WBRTXYR1;Monitor 18" LG;1;95059320;124;4;Escritório;K7
+AO877BXL;Teclado Logitech;1;95059320;124;4;Escritório;K7
+NZGQWUKO;Mouse Dell;1;95059320;124;4;Escritório;K7
+CWRX2CL8;Cadeira;1;95059320;124;4;Escritório;K8
+M83CU2N3;Monitor 22" LG;1;95059320;124;4;Escritório;K8
+OGIGB7HH;Teclado HP;1;95059320;124;4;Escritório;K8
+PB9LHC4I;Mouse HP;1;95059320;124;4;Escritório;K8
+F5HS0FZI;Cadeira;1;95059320;124;4;Escritório;L1
+IMD8ZW25;Monitor 20" Samsung;1;95059320;124;4;Escritório;L1
+8LSBTI2O;Teclado Logitech;1;95059320;124;4;Escritório;L1
+JCOSLLTQ;Mouse Logitech;1;95059320;124;4;Escritório;L1
+OBZVNHAS;Cadeira;1;95059320;124;4;Escritório;L2
+9PQ2VEE0;Monitor 21" Dell;1;95059320;124;4;Escritório;L2
+5JONH8M4;Teclado Dell;1;95059320;124;4;Escritório;L2
+M5BJL5X8;Mouse HP;1;95059320;124;4;Escritório;L2
+BKRA6N0R;Cadeira;1;95059320;124;4;Escritório;L3
+NAA7X4FV;Monitor 21" LG;1;95059320;124;4;Escritório;L3
+UKQC2ODY;Teclado HP;1;95059320;124;4;Escritório;L3
+X9SAJQPA;Mouse HP;1;95059320;124;4;Escritório;L3
+5MKIARE6;Cadeira;1;95059320;124;4;Escritório;L4
+EFO8P43K;Monitor 21" Samsung;1;95059320;124;4;Escritório;L4
+8YVVANFY;Teclado Logitech;1;95059320;124;4;Escritório;L4
+JW2D34FC;Mouse Dell;1;95059320;124;4;Escritório;L4
+QCAH7ZJ7;Cadeira;1;95059320;124;4;Escritório;L5
+5C138BUY;Monitor 18" HP;1;95059320;124;4;Escritório;L5
+VCV19RKK;Teclado HP;1;95059320;124;4;Escritório;L5
+S3DU3YZA;Mouse HP;1;95059320;124;4;Escritório;L5
+89HPWRSR;Cadeira;1;95059320;124;4;Escritório;L6
+JO0LKJLG;Monitor 21" Dell;1;95059320;124;4;Escritório;L6
+0BGFR146;Teclado Logitech;1;95059320;124;4;Escritório;L6
+2DNE5D7Z;Mouse Logitech;1;95059320;124;4;Escritório;L6
+6RSGL6UU;Cadeira;1;95059320;124;4;Escritório;L7
+X77TXBK4;Monitor 23" HP;1;95059320;124;4;Escritório;L7
+PXV8OFNB;Teclado Dell;1;95059320;124;4;Escritório;L7
+TCTVNA4E;Mouse Dell;1;95059320;124;4;Escritório;L7
+96YOIMHZ;Cadeira;1;95059320;124;4;Escritório;L8
+ZQD9KLWG;Monitor 20" HP;1;95059320;124;4;Escritório;L8
+VDKIXTGK;Teclado Dell;1;95059320;124;4;Escritório;L8
+K3DPOVBP;Mouse Dell;1;95059320;124;4;Escritório;L8
+SF140WLR;Cadeira;1;95059320;124;5;Escritório;A1
+G0NYEDQU;Monitor 20" Samsung;1;95059320;124;5;Escritório;A1
+8AQZGT7O;Teclado Dell;1;95059320;124;5;Escritório;A1
+WGYZDEYY;Mouse Logitech;1;95059320;124;5;Escritório;A1
+UR5PBSP2;Cadeira;1;95059320;124;5;Escritório;A2
+ZXBR1RMF;Monitor 21" Dell;1;95059320;124;5;Escritório;A2
+4M5LDBKM;Teclado Logitech;1;95059320;124;5;Escritório;A2
+4YXFVIC8;Mouse Dell;1;95059320;124;5;Escritório;A2
+3E1O6ML5;Cadeira;1;95059320;124;5;Escritório;A3
+353FR6KV;Monitor 21" HP;1;95059320;124;5;Escritório;A3
+JD1GLEP2;Teclado Dell;1;95059320;124;5;Escritório;A3
+W3LZB71X;Mouse Dell;1;95059320;124;5;Escritório;A3
+0QLEHRGR;Cadeira;1;95059320;124;5;Escritório;A4
+Q8SKK3HH;Monitor 20" LG;1;95059320;124;5;Escritório;A4
+XA63HIJF;Teclado HP;1;95059320;124;5;Escritório;A4
+M7N85M9B;Mouse HP;1;95059320;124;5;Escritório;A4
+26SPV1MW;Cadeira;1;95059320;124;5;Escritório;A5
+DCBYL0JV;Monitor 24" LG;1;95059320;124;5;Escritório;A5
+G8EC6FIC;Teclado Logitech;1;95059320;124;5;Escritório;A5
+PQ9Z5A4Y;Mouse Logitech;1;95059320;124;5;Escritório;A5
+AADPH705;Cadeira;1;95059320;124;5;Escritório;A6
+517UNCQ7;Monitor 21" Samsung;1;95059320;124;5;Escritório;A6
+RWPZMNXT;Teclado HP;1;95059320;124;5;Escritório;A6
+6VLGCZI5;Mouse Dell;1;95059320;124;5;Escritório;A6
+80GU5YIM;Cadeira;1;95059320;124;5;Escritório;A7
+8DNB8HJZ;Monitor 22" Samsung;1;95059320;124;5;Escritório;A7
+SAH1X0LI;Teclado Dell;1;95059320;124;5;Escritório;A7
+66H9W1MN;Mouse Logitech;1;95059320;124;5;Escritório;A7
+86NUBGNT;Cadeira;1;95059320;124;5;Escritório;A8
+EU8J8XPT;Monitor 24" LG;1;95059320;124;5;Escritório;A8
+LOC0B8Q5;Teclado Dell;1;95059320;124;5;Escritório;A8
+DPSDICW6;Mouse Dell;1;95059320;124;5;Escritório;A8
+HPZM17J8;Cadeira;1;95059320;124;5;Escritório;B1
+AC97D1RG;Monitor 21" HP;1;95059320;124;5;Escritório;B1
+W7VHBDMF;Teclado Dell;1;95059320;124;5;Escritório;B1
+YADLSHVG;Mouse HP;1;95059320;124;5;Escritório;B1
+UGADHX5D;Cadeira;1;95059320;124;5;Escritório;B2
+WCFJYKCC;Monitor 20" Dell;1;95059320;124;5;Escritório;B2
+01QTXJW3;Teclado HP;1;95059320;124;5;Escritório;B2
+DVFHW3ZZ;Mouse Logitech;1;95059320;124;5;Escritório;B2
+L6PSBQS3;Cadeira;1;95059320;124;5;Escritório;B3
+EQBMI1GB;Monitor 24" LG;1;95059320;124;5;Escritório;B3
+4HZ77RG5;Teclado HP;1;95059320;124;5;Escritório;B3
+EZYB65IB;Mouse Logitech;1;95059320;124;5;Escritório;B3
+QX6X0EHZ;Cadeira;1;95059320;124;5;Escritório;B4
+PQV7C53M;Monitor 24" HP;1;95059320;124;5;Escritório;B4
+HVJ9BBPI;Teclado Logitech;1;95059320;124;5;Escritório;B4
+TN6XKMWU;Mouse Logitech;1;95059320;124;5;Escritório;B4
+A5ZVAR4C;Cadeira;1;95059320;124;5;Escritório;B5
+TKIB5MSE;Monitor 23" LG;1;95059320;124;5;Escritório;B5
+9D49686A;Teclado Dell;1;95059320;124;5;Escritório;B5
+N7AH1YNR;Mouse Logitech;1;95059320;124;5;Escritório;B5
+HE3GAG9R;Cadeira;1;95059320;124;5;Escritório;B6
+R20OJXKA;Monitor 20" Dell;1;95059320;124;5;Escritório;B6
+OV7MZTVY;Teclado HP;1;95059320;124;5;Escritório;B6
+L5X9SO0X;Mouse Dell;1;95059320;124;5;Escritório;B6
+1F0KAR0P;Cadeira;1;95059320;124;5;Escritório;B7
+QDO472LP;Monitor 20" Dell;1;95059320;124;5;Escritório;B7
+RQI3QYQW;Teclado Dell;1;95059320;124;5;Escritório;B7
+ETFPROQK;Mouse Dell;1;95059320;124;5;Escritório;B7
+73BCR7RW;Cadeira;1;95059320;124;5;Escritório;B8
+4HYGXMO2;Monitor 18" HP;1;95059320;124;5;Escritório;B8
+V9OJX2J1;Teclado HP;1;95059320;124;5;Escritório;B8
+1OGXM15F;Mouse Dell;1;95059320;124;5;Escritório;B8
+YN1U4DTL;Cadeira;1;95059320;124;5;Escritório;C1
+KO4OEWDZ;Monitor 18" HP;1;95059320;124;5;Escritório;C1
+BOU73XFT;Teclado Dell;1;95059320;124;5;Escritório;C1
+MZVBMBNB;Mouse Dell;1;95059320;124;5;Escritório;C1
+M2WXPWR0;Cadeira;1;95059320;124;5;Escritório;C2
+F4DPIFJF;Monitor 21" Samsung;1;95059320;124;5;Escritório;C2
+TFDDV42H;Teclado HP;1;95059320;124;5;Escritório;C2
+TUCSL5S2;Mouse Logitech;1;95059320;124;5;Escritório;C2
+HUTD3IY7;Cadeira;1;95059320;124;5;Escritório;C3
+V1BEN5L8;Monitor 22" Dell;1;95059320;124;5;Escritório;C3
+GVUA7G5P;Teclado Dell;1;95059320;124;5;Escritório;C3
+MFPI556E;Mouse Dell;1;95059320;124;5;Escritório;C3
+U3Z5B1R5;Cadeira;1;95059320;124;5;Escritório;C4
+K4YHAHVN;Monitor 22" HP;1;95059320;124;5;Escritório;C4
+0SKRA5OX;Teclado HP;1;95059320;124;5;Escritório;C4
+6N05R4JG;Mouse Dell;1;95059320;124;5;Escritório;C4

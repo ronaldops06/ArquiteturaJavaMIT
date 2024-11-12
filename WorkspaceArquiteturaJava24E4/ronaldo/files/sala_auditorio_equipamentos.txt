@@ -1,0 +1,7 @@
+//código;descrição;ativo;escritório-cep;escritório-número;andar-número;sala-nome
+SJN14OWJ;Monitor 24" Dell;1;95059320;124;2;Auditório
+O1W14O2D;Teclado Logitech;1;95059320;124;2;Auditório
+P24IFKJF;Mouse Logitech;1;95059320;124;2;Auditório
+MDKLSAQO;Projetor HP;1;95059320;124;2;Auditório
+OFSRJKJK;Microfone Shure V100;1;95059320;124;2;Auditório
+IR9O2LFX;Microfone Shure V100;1;95059320;124;2;Auditório

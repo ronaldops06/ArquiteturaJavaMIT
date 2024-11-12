@@ -2,6 +2,9 @@ package br.edu.ifnet.ronaldo.model.domain;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -10,9 +13,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "TVAGA")
@@ -31,9 +34,10 @@ public class Vaga {
 	
 	@ManyToOne
 	@JoinColumn(name = "sala_garagem_id")
+	@JsonBackReference
 	private SalaGaragem salaGaragem;
 	
-	@ManyToOne
+	@ManyToMany
     @JoinTable(
         name = "TVAGA_FUNCAO", 
         joinColumns = @JoinColumn(name = "vaga_id"), 
