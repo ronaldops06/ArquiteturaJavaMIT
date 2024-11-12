@@ -39,7 +39,7 @@ public class AndarLoad{
 			Andar andar = new Andar();
 			andar.setNumero(Integer.parseInt(campos[0]));
 			
-			Escritorio escritorio = escritorioService.findByEndereco(Long.parseLong(campos[1]), Integer.parseInt(campos[2]));
+			Escritorio escritorio = escritorioService.findByEndereco(campos[1], Integer.parseInt(campos[2]));
 			andar.setEscritorio(escritorio);
 			
 			andarService.incluir(andar);

@@ -107,7 +107,7 @@ public class SalaLoad {
 			sala.setHoraMaximaReserva(formatter.parse(campos[6]));
 		}
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), Long.parseLong(campos[7]), Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
 		sala.setAndar(andar);
 		
 		salaAuditorioService.incluir(sala);
@@ -120,7 +120,7 @@ public class SalaLoad {
 		sala.setAtivo(Boolean.parseBoolean(campos[2]));
 		sala.setTipo(tipoSala);
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), Long.parseLong(campos[7]), Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
 		sala.setAndar(andar);
 		
 		salaEscritorioService.incluir(sala);
@@ -142,7 +142,7 @@ public class SalaLoad {
 			sala.setHoraMaximaReserva(formatter.parse(campos[6]));
 		}
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), Long.parseLong(campos[7]), Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
 		sala.setAndar(andar);
 		
 		salaFestaService.incluir(sala);
@@ -155,7 +155,7 @@ public class SalaLoad {
 		sala.setAtivo(Boolean.parseBoolean(campos[2]));
 		sala.setTipo(tipoSala);		
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), Long.parseLong(campos[7]), Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
 		sala.setAndar(andar);
 		
 		salaGaragemService.incluir(sala);
@@ -171,7 +171,7 @@ public class SalaLoad {
 			sala.setTempoMaximoReserva(Integer.parseInt(campos[4]));
 		}
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), Long.parseLong(campos[7]), Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
 		sala.setAndar(andar);
 		
 		salaReuniaoService.incluir(sala);

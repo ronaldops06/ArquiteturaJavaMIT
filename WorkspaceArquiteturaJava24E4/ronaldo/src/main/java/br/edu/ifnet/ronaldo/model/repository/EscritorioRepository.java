@@ -12,7 +12,7 @@ import org.springframework.data.repository.CrudRepository;
 @Repository
 public interface EscritorioRepository extends CrudRepository<Escritorio, Integer> {
 
-	Escritorio findByEndereco_CepAndEndereco_Numero(long cep, int numero);
+	Escritorio findByEndereco_CepAndEndereco_Numero(String cep, int numero);
 	
 	Iterable<Escritorio> findAll(Sort by);
 }

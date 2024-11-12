@@ -33,7 +33,7 @@ public class EnderecoLoad {
 			
 			String[] campos = linha.split(";");
 			Endereco endereco = new Endereco();
-			endereco.setCep(Long.parseLong(campos[0]));
+			endereco.setCep(campos[0]);
 			endereco.setLogradouro(campos[1]);
 			endereco.setNumero(Integer.parseInt(campos[2]));
 			endereco.setBairro(campos[3]);

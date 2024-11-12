@@ -49,7 +49,7 @@ public class AndarService {
 		return (Collection<Andar>) andarRepository.findAll(Sort.by(Sort.Order.asc("numero")));
 	}
 	
-	public Andar findByNumeroAndEscritorio(int numero, long cepEndereco, int numeroEndereco) {
+	public Andar findByNumeroAndEscritorio(int numero, String cepEndereco, int numeroEndereco) {
 		Escritorio escritorio = escritorioRepository.findByEndereco_CepAndEndereco_Numero(cepEndereco, numeroEndereco);
 		return andarRepository.findByNumeroAndEscritorio_Id(numero, escritorio.getId());
 	}

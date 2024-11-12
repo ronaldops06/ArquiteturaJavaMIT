@@ -40,7 +40,7 @@ public class EscritorioLoad {
 			escritorio.setNome(campos[0]);
 			escritorio.setAtivo(Boolean.parseBoolean(campos[1]));
 			
-			Endereco endereco = enderecoService.findByCepAndNumero(Long.parseLong(campos[2]), Integer.parseInt(campos[3]));
+			Endereco endereco = enderecoService.findByCepAndNumero(campos[2], Integer.parseInt(campos[3]));
 			escritorio.setEndereco(endereco);
 			
 			escritorioService.incluir(escritorio);

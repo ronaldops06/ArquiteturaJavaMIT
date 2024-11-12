@@ -8,5 +8,5 @@ import br.edu.ifnet.ronaldo.model.domain.Endereco;
 @Repository
 public interface EnderecoRepository extends CrudRepository<Endereco, Integer> {
 	
-	Endereco findByCepAndNumero(long cep, int numero);
+	Endereco findByCepAndNumero(String cep, int numero);
 }

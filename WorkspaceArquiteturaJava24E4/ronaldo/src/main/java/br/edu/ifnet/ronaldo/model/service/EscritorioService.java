@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import br.edu.ifnet.ronaldo.Constants;
 import br.edu.ifnet.ronaldo.exceptions.EscritorioNaoEncontradoException;
+import br.edu.ifnet.ronaldo.model.domain.Endereco;
 import br.edu.ifnet.ronaldo.model.domain.Escritorio;
 import br.edu.ifnet.ronaldo.model.repository.EscritorioRepository;
 
@@ -16,8 +17,13 @@ public class EscritorioService {
 
 	@Autowired
 	private EscritorioRepository escritorioRepository;
+	@Autowired
+	private EnderecoService enderecoService;
 	
 	public Escritorio incluir(Escritorio escritorio) {
+		
+		Endereco endereco = enderecoService.incluir(escritorio.getEndereco());
+		escritorio.setEndereco(endereco);
 		
 		return escritorioRepository.save(escritorio);
 	}
@@ -45,7 +51,7 @@ public class EscritorioService {
 		return (Collection<Escritorio>) escritorioRepository.findAll(Sort.by(Sort.Order.asc("nome")));
 	}	
 	
-	public Escritorio findByEndereco(long cep, int numero) {
+	public Escritorio findByEndereco(String cep, int numero) {
 		return escritorioRepository.findByEndereco_CepAndEndereco_Numero(cep, numero);
 	}
 }
