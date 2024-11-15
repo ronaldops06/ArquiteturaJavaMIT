@@ -16,10 +16,7 @@ public class Pessoa {
 	private Integer id;
 	private String nome;
 	private String cpf;
-	
-	@Transient
-	private Funcao funcao;
-	
+		
 	public Integer getId() {
 		return id;
 	}
@@ -37,11 +34,5 @@ public class Pessoa {
 	}
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
-	}
-	public Funcao getFuncao() {
-		return funcao;
-	}
-	public void setFuncao(Funcao funcao) {
-		this.funcao = funcao;
 	}
 }

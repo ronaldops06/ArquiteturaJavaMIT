@@ -1,9 +1,6 @@
 package br.edu.ifnet.ronaldo.model.domain;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -12,8 +9,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
@@ -36,15 +31,7 @@ public class Vaga {
 	@JoinColumn(name = "sala_garagem_id")
 	@JsonBackReference
 	private SalaGaragem salaGaragem;
-	
-	@ManyToMany
-    @JoinTable(
-        name = "TVAGA_FUNCAO", 
-        joinColumns = @JoinColumn(name = "vaga_id"), 
-        inverseJoinColumns = @JoinColumn(name = "funcao_id")
-    )
-	private List<Funcao> funcoes;
-	
+		
 	public Integer getId() {
 		return id;
 	}
@@ -81,12 +68,5 @@ public class Vaga {
 	}
 	public void setSalaGaragem(SalaGaragem salaGaragem) {
 		this.salaGaragem = salaGaragem;
-	}
-	public List<Funcao> getFuncoes() {
-		return funcoes;
-	}
-	public void setFuncoes(List<Funcao> funcoes) {
-		this.funcoes = funcoes;
-	}
-	
+	}	
 }

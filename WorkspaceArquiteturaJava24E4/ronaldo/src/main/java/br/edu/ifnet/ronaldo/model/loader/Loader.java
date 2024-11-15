@@ -8,11 +8,13 @@ import org.springframework.stereotype.Component;
 import br.edu.ifnet.ronaldo.model.service.AndarService;
 import br.edu.ifnet.ronaldo.model.service.EnderecoService;
 import br.edu.ifnet.ronaldo.model.service.EscritorioService;
+import br.edu.ifnet.ronaldo.model.service.MesaService;
 import br.edu.ifnet.ronaldo.model.service.SalaAuditorioService;
 import br.edu.ifnet.ronaldo.model.service.SalaEscritorioService;
 import br.edu.ifnet.ronaldo.model.service.SalaFestaService;
 import br.edu.ifnet.ronaldo.model.service.SalaGaragemService;
 import br.edu.ifnet.ronaldo.model.service.SalaReuniaoService;
+import br.edu.ifnet.ronaldo.model.service.VagaService;
 
 @Component
 public class Loader implements ApplicationRunner{
@@ -32,6 +34,10 @@ public class Loader implements ApplicationRunner{
 	private SalaGaragemService salaGaragemService;
 	@Autowired
 	private SalaReuniaoService salaReuniaoService;
+	@Autowired
+	private VagaService vagaService;
+	@Autowired
+	private MesaService mesaService;
 	
 	public void run(ApplicationArguments args) throws Exception {
 		
@@ -39,10 +45,14 @@ public class Loader implements ApplicationRunner{
 		EscritorioLoad escritorioLoad = new EscritorioLoad(enderecoService, escritorioService);
 		AndarLoad andarLoad = new AndarLoad(escritorioService, andarService);
 		SalaLoad salaLoad = new SalaLoad(andarService, salaAuditorioService, salaEscritorioService, salaFestaService, salaGaragemService, salaReuniaoService);
+		VagaLoad vagaLoad = new VagaLoad(salaGaragemService, vagaService);
+		MesaLoad mesaLoad = new MesaLoad(salaEscritorioService, mesaService);
 		
 		enderecoLoad.loadEnderecos();
 		escritorioLoad.loadEscritorios();
 		andarLoad.loadAndar();
 		salaLoad.loadSalas();
+		vagaLoad.loadVagas();
+		mesaLoad.loadMesas();
 	}
 }

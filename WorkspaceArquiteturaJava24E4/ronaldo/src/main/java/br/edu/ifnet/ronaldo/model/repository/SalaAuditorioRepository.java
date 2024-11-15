@@ -9,5 +9,7 @@ import br.edu.ifnet.ronaldo.model.domain.SalaGaragem;
 
 @Repository
 public interface SalaAuditorioRepository extends CrudRepository<SalaAuditorio, Integer>, SalaRepository<SalaAuditorio>{
+	SalaAuditorio findByNomeAndAndar_Id(String nome, long andarId);
+	
 	Iterable<SalaAuditorio> findAll(Sort by);
 }

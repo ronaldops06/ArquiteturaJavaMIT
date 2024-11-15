@@ -33,7 +33,7 @@ public class EscritorioService {
 		if (!escritorioRepository.existsById(escritorio.getId())) {
 			throw new EscritorioNaoEncontradoException(Constants.MSG_NOT_FOUND);
 		}
-		
+				
 		return escritorioRepository.save(escritorio);
 	}
 	

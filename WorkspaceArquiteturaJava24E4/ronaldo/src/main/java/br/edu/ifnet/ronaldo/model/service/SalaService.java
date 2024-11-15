@@ -9,12 +9,16 @@ import org.springframework.stereotype.Service;
 
 import br.edu.ifnet.ronaldo.Constants;
 import br.edu.ifnet.ronaldo.exceptions.SalaNaoEncontradaException;
+import br.edu.ifnet.ronaldo.model.domain.Andar;
 import br.edu.ifnet.ronaldo.model.domain.Sala;
 import br.edu.ifnet.ronaldo.model.domain.SalaGaragem;
 import br.edu.ifnet.ronaldo.model.repository.SalaRepository;
 
 public abstract class SalaService<T extends Sala> {
-
+	
+	@Autowired
+	protected AndarService andarService;
+	
 	protected SalaRepository<T> salaRepository;
 	
 	public SalaService(SalaRepository<T> salaRepository) {
@@ -47,5 +51,10 @@ public abstract class SalaService<T extends Sala> {
 	
 	public Collection<T> obterLista(){
 		return (Collection<T>) salaRepository.findAll(Sort.by(Sort.Order.asc("nome")));
+	}
+	
+	public T findByNomeAndAndarAndEscritorio(String nome, Integer numeroAndar, String cepEndereco, Integer numeroEndereco) {
+		Andar andar = andarService.findByNumeroAndEscritorio(numeroAndar, cepEndereco, numeroEndereco);
+		return salaRepository.findByNomeAndAndar_Id(nome, andar.getId());
 	}
 }

@@ -9,9 +9,12 @@ import br.edu.ifnet.ronaldo.model.repository.SalaRepository;
 
 @Service
 public class SalaEscritorioService extends SalaService<SalaEscritorio>{
-
+	
+	@Autowired
+	private MesaService mesaservice;
+	
 	@Autowired
 	public SalaEscritorioService(SalaEscritorioRepository salaRepository) {
 		super(salaRepository);
-	}	
+	}
 }

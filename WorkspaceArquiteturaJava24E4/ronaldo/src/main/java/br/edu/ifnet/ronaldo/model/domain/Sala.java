@@ -40,14 +40,6 @@ public abstract class Sala{
 	@Enumerated(EnumType.STRING)
 	private TipoSala tipo;
 	
-	@ManyToMany
-    @JoinTable(
-        name = "TSALA_FUNCAO",
-        joinColumns = @JoinColumn(name = "sala_id"), 
-        inverseJoinColumns = @JoinColumn(name = "funcao_id")
-    )
-	private List<Funcao> funcoes;
-	
 	public Integer getId() {
 		return id;
 	}
@@ -84,10 +76,4 @@ public abstract class Sala{
 	public void setTipo(TipoSala tipo) {
 		this.tipo = tipo;
 	}
-	public List<Funcao> getFuncoes() {
-		return funcoes;
-	}
-	public void setFuncoes(List<Funcao> funcoes) {
-		this.funcoes = funcoes;
-	}	
 }

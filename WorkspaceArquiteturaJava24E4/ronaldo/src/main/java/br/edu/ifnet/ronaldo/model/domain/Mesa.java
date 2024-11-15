@@ -15,6 +15,8 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "TMESA")
@@ -24,6 +26,8 @@ public class Mesa {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
+	@NotBlank(message="O local da mesa é obrigatório")
+	@Size(min=2, max=20, message="O local deve ter entre 2 e 20 caracteres")
 	private String local;
 	private Boolean Ativo;
 	
@@ -31,15 +35,7 @@ public class Mesa {
 	@JoinColumn(name = "sala_escritorio_id")
 	@JsonBackReference
 	private SalaEscritorio salaEscritorio;
-	
-	@ManyToMany
-    @JoinTable(
-        name = "TMESA_FUNCAO", 
-        joinColumns = @JoinColumn(name = "mesa_id"), 
-        inverseJoinColumns = @JoinColumn(name = "funcao_id")
-    )
-	private List<Funcao> funcoes;
-	
+		
 	@ManyToMany
     @JoinTable(
         name = "TMESA_EQUIPAMENTO", 
@@ -78,11 +74,5 @@ public class Mesa {
 	}
 	public void setEquipamentos(List<Equipamento> equipamentos) {
 		this.equipamentos = equipamentos;
-	}
-	public List<Funcao> getFuncoes() {
-		return funcoes;
-	}
-	public void setFuncoes(List<Funcao> funcoes) {
-		this.funcoes = funcoes;
 	}
 }

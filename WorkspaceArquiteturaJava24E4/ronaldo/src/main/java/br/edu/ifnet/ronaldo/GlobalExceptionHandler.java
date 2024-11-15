@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import br.edu.ifnet.ronaldo.exceptions.AndarNaoEncontradoException;
 import br.edu.ifnet.ronaldo.exceptions.EscritorioNaoEncontradoException;
+import br.edu.ifnet.ronaldo.exceptions.MesaNaoEncontradaException;
+import br.edu.ifnet.ronaldo.exceptions.SalaNaoEncontradaException;
+import br.edu.ifnet.ronaldo.exceptions.VagaNaoEncontradaException;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
@@ -36,6 +39,24 @@ public class GlobalExceptionHandler {
 	
 	@ExceptionHandler(AndarNaoEncontradoException.class)
 	public ResponseEntity<Object> handleValidationExceptions(AndarNaoEncontradoException ex) {
+
+		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler(SalaNaoEncontradaException.class)
+	public ResponseEntity<Object> handleValidationExceptions(SalaNaoEncontradaException ex) {
+
+		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler(VagaNaoEncontradaException.class)
+	public ResponseEntity<Object> handleValidationExceptions(VagaNaoEncontradaException ex) {
+
+		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler(MesaNaoEncontradaException.class)
+	public ResponseEntity<Object> handleValidationExceptions(MesaNaoEncontradaException ex) {
 
 		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
 	}
