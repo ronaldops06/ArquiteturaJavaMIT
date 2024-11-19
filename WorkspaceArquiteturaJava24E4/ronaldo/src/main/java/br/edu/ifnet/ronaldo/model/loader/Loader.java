@@ -9,6 +9,8 @@ import br.edu.ifnet.ronaldo.model.service.AndarService;
 import br.edu.ifnet.ronaldo.model.service.EnderecoService;
 import br.edu.ifnet.ronaldo.model.service.EscritorioService;
 import br.edu.ifnet.ronaldo.model.service.MesaService;
+import br.edu.ifnet.ronaldo.model.service.PessoaService;
+import br.edu.ifnet.ronaldo.model.service.ReservaService;
 import br.edu.ifnet.ronaldo.model.service.SalaAuditorioService;
 import br.edu.ifnet.ronaldo.model.service.SalaEscritorioService;
 import br.edu.ifnet.ronaldo.model.service.SalaFestaService;
@@ -38,15 +40,31 @@ public class Loader implements ApplicationRunner{
 	private VagaService vagaService;
 	@Autowired
 	private MesaService mesaService;
+	@Autowired
+	private PessoaService pessoaService;
+	@Autowired
+	private ReservaService reservaService;
 	
 	public void run(ApplicationArguments args) throws Exception {
 		
 		EnderecoLoad enderecoLoad = new EnderecoLoad(enderecoService);
 		EscritorioLoad escritorioLoad = new EscritorioLoad(enderecoService, escritorioService);
 		AndarLoad andarLoad = new AndarLoad(escritorioService, andarService);
-		SalaLoad salaLoad = new SalaLoad(andarService, salaAuditorioService, salaEscritorioService, salaFestaService, salaGaragemService, salaReuniaoService);
-		VagaLoad vagaLoad = new VagaLoad(salaGaragemService, vagaService);
-		MesaLoad mesaLoad = new MesaLoad(salaEscritorioService, mesaService);
+		SalaLoad salaLoad = new SalaLoad(escritorioService, andarService, salaAuditorioService, salaEscritorioService, salaFestaService, salaGaragemService, salaReuniaoService);
+		VagaLoad vagaLoad = new VagaLoad(escritorioService, andarService, salaGaragemService, vagaService);
+		MesaLoad mesaLoad = new MesaLoad(escritorioService, andarService, salaEscritorioService, mesaService);
+		PessoaLoad pessoaLoad = new PessoaLoad(pessoaService);
+		ReservaLoad reservaLoad = new ReservaLoad(escritorioService,
+												  andarService,
+												  reservaService,
+												  pessoaService,
+												  salaEscritorioService,
+												  salaGaragemService,
+												  salaReuniaoService,
+												  salaAuditorioService,
+												  salaFestaService,
+												  mesaService,
+												  vagaService);
 		
 		enderecoLoad.loadEnderecos();
 		escritorioLoad.loadEscritorios();
@@ -54,5 +72,9 @@ public class Loader implements ApplicationRunner{
 		salaLoad.loadSalas();
 		vagaLoad.loadVagas();
 		mesaLoad.loadMesas();
+		pessoaLoad.loadPessoas();
+		reservaLoad.LoadReservasSalas();
+		reservaLoad.LoadReservasMesas();
+		reservaLoad.LoadReservasVagas();
 	}
 }

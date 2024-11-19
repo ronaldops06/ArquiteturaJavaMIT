@@ -39,6 +39,10 @@ public class MesaService {
 		return mesaRepository.findById(id).orElse(null);
 	}
 	
+	public Mesa findByLocalAndSala(String local, Integer salaId) {
+		return mesaRepository.findByLocalAndSalaEscritorio_Id(local, salaId);
+	}
+	
 	public Collection<Mesa> obterLista(){
 		return (Collection<Mesa>) mesaRepository.findAll(Sort.by(Sort.Order.asc("local")));
 	}

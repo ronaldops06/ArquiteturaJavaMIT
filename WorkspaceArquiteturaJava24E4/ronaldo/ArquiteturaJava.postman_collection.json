@@ -1,0 +1,1416 @@
+{
+	"info": {
+		"_postman_id": "c02b835d-2fbc-4fc8-8d13-6fe6b7ce9cf2",
+		"name": "ArquiteturaJava",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7400813",
+		"_collection_link": "https://crimson-satellite-5953.postman.co/workspace/Personal~1b90f027-7de4-40cd-a601-4bfe66341915/collection/7400813-c02b835d-2fbc-4fc8-8d13-6fe6b7ce9cf2?action=share&source=collection_link&creator=7400813"
+	},
+	"item": [
+		{
+			"name": "Escritorio",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/escritorio",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"escritorio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Cyncly Matriz\",\r\n    \"ativo\": true,\r\n    \"endereco\": {\r\n        \"cep\": 95059400,\r\n        \"numero\": 124,\r\n        \"complemento\": \"\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/escritorio/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"escritorio",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"nome\": \"Cyncly Matriz Centro\",\r\n    \"ativo\": false,\r\n    \"endereco\": {\r\n        \"id\": 3,\r\n        \"cep\": \"95059-400\",\r\n        \"logradouro\": \"Rua Armindo Luiz Rech\",\r\n        \"numero\": 124,\r\n        \"bairro\": \"Serrano\",\r\n        \"complemento\": \"\",\r\n        \"cidade\": null,\r\n        \"uf\": \"RS\",\r\n        \"localidade\": \"Caxias do Sul\",\r\n        \"pais\": null\r\n    },\r\n    \"andares\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/escritorio/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"escritorio",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/escritorio/2/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"escritorio",
+								"2",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/escritorio/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"escritorio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Andar",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/andar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"andar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero\": 9,\r\n    \"escritorio\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/andar/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"andar",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 8,\r\n    \"numero\": 10,\r\n    \"escritorio\": {\r\n        \"id\": 2\r\n    },\r\n    \"salas\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/andar/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"andar",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/andar/8/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"andar",
+								"8",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/andar/6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"andar",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SalaAuditorio",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-auditorio",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-auditorio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Auditório 1\",\r\n    \"capacidade\": 10,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Auditorio\",\r\n    \"tempoMaximoReserva\": 10,\r\n    \"horaMinimaReserva\": \"2000-01-01T07:00:00\",\r\n    \"horaMaximaReserva\": \"2000-01-01T21:00:00\",\r\n    \"funcoes\": [],\r\n    \"vagas\": [],\r\n    \"andar\": {\r\n        \"id\": 6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-auditorio/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-auditorio",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"nome\": \"Auditório\",\r\n    \"capacidade\": 120,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Auditorio\",\r\n    \"funcoes\": [],\r\n    \"tempoMaximoReserva\": 9,\r\n    \"horaMinimaReserva\": \"2000-01-01T09:00:00.000+00:00\",\r\n    \"horaMaximaReserva\": \"2020-01-01T23:00:00.000+00:00\",\r\n    \"equipamentos\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-auditorio/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-auditorio",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-auditorio/2/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-auditorio",
+								"2",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-auditorio/11",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-auditorio",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SalaEscritorio",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-escritorio",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-escritorio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Escritório 1\",\r\n    \"capacidade\": 10,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Escritorio\",\r\n    \"mesas\": [\r\n        {\r\n            \"local\": \"A2\",\r\n            \"equipamentos\": [],\r\n            \"ativo\": true\r\n        },\r\n        {\r\n            \"local\": \"A3\",\r\n            \"equipamentos\": [],\r\n            \"ativo\": true\r\n        },\r\n        {\r\n            \"local\": \"A1\",\r\n            \"equipamentos\": [],\r\n            \"ativo\": true\r\n        }\r\n    ],\r\n    \"andar\": {\r\n        \"id\": 6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-escritorio/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-escritorio",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 8,\r\n    \"nome\": \"Escritório\",\r\n    \"capacidade\": 100,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Escritorio\",\r\n    \"funcoes\": [],\r\n    \"mesas\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-escritorio/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-escritorio",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-escritorio/11/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-escritorio",
+								"11",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-escritorio/8",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-escritorio",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mesa",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/mesa",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mesa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"local\": \"L5\",\r\n    \"equipamentos\": [],\r\n    \"ativo\": true,\r\n    \"salaEscritorio\": {\r\n        \"id\": 8\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/mesa/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mesa",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 114,\r\n    \"local\": \"L5\",\r\n    \"equipamentos\": [],\r\n    \"ativo\": false,\r\n    \"salaEscritorio\": {\r\n        \"id\": 8\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/mesa/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mesa",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/mesa/114/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mesa",
+								"114",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/mesa/113",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mesa",
+								"113"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SalaFesta",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-festa",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-festa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Sala de Festa\",\r\n    \"capacidade\": 50,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Festa\",\r\n    \"funcoes\": [],\r\n    \"tempoMaximoReserva\": 5,\r\n    \"horaMinimaReserva\": \"2020-01-01T10:00:00.000+00:00\",\r\n    \"horaMaximaReserva\": \"2020-01-02T11:59:00.000+00:00\",\r\n    \"equipamentos\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-festa/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-festa",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 12,\r\n    \"nome\": \"Sala de Festa\",\r\n    \"capacidade\": 60,\r\n    \"ativo\": false,\r\n    \"tipo\": \"Festa\",\r\n    \"funcoes\": [],\r\n    \"tempoMaximoReserva\": 5,\r\n    \"horaMinimaReserva\": \"2020-01-01T10:00:00.000+00:00\",\r\n    \"horaMaximaReserva\": \"2020-01-02T11:59:00.000+00:00\",\r\n    \"equipamentos\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-festa/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-festa",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-festa/12",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-festa",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-festa/12/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-festa",
+								"12",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SalaGaragem",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-garagem",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-garagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"nome\": \"Recriação\",\r\n    \"capacidade\": 20,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Escritorio\",\r\n    \"funcoes\": [],\r\n    \"vagas\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-garagem/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-garagem",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-garagem/8/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-garagem",
+								"8",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-garagem/2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-garagem",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Garagem\",\r\n    \"capacidade\": 20,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Garagem\",\r\n    \"funcoes\": [],\r\n    \"vagas\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-garagem/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-garagem",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vaga",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/vaga",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"vaga"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"X\",\r\n    \"possuiCarregador\": true,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Carro\",\r\n    \"salaGaragem\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/vaga/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"vaga",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 21,\r\n    \"codigo\": \"X\",\r\n    \"possuiCarregador\": true,\r\n    \"ativo\": false,\r\n    \"tipo\": \"Carro\",\r\n    \"salaGaragem\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/vaga/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"vaga",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/vaga/21/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"vaga",
+								"21",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/vaga/20",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"vaga",
+								"20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SalaReuniao",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-reuniao",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-reuniao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Reunião - Marrocos\",\r\n    \"capacidade\": 15,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Reuniao\",\r\n    \"funcoes\": [],\r\n    \"tempoMaximoReserva\": 8,\r\n    \"equipamentos\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-reuniao/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-reuniao",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"nome\": \"Reunião - Marrocos\",\r\n    \"capacidade\": 25,\r\n    \"ativo\": true,\r\n    \"tipo\": \"Reuniao\",\r\n    \"funcoes\": [],\r\n    \"tempoMaximoReserva\": 10,\r\n    \"equipamentos\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/sala-reuniao/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-reuniao",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-reuniao/11/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-reuniao",
+								"11",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sala-reuniao/3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sala-reuniao",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pessoa",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/pessoa",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"pessoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Marcos dos Santos\",\r\n    \"cpf\": \"68307664004\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/pessoa/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"pessoa",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"nome\": \"Marcos Pereira\",\r\n    \"cpf\": \"68307664004\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/pessoa/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"pessoa",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/pessoa/7/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"pessoa",
+								"7",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/pessoa/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"pessoa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reserva",
+			"item": [
+				{
+					"name": "Lista-Pessoa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reserva/pessoa?pessoaId=1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"pessoa"
+							],
+							"query": [
+								{
+									"key": "pessoaId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista-Sala",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reserva/sala?salaId=2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"sala"
+							],
+							"query": [
+								{
+									"key": "salaId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista-Mesa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reserva/mesa?mesaId=1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"mesa"
+							],
+							"query": [
+								{
+									"key": "mesaId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista-Vaga",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reserva/vaga?vagaId=1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"vaga"
+							],
+							"query": [
+								{
+									"key": "vagaId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir-Sala",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pessoa\": {\r\n        \"id\": 1,\r\n        \"nome\": \"João da Silva\",\r\n        \"cpf\": \"67107207059\"\r\n    },\r\n    \"mesa\": null,\r\n    \"sala\": {\r\n        \"id\": 2\r\n    },\r\n    \"vaga\": null,\r\n    \"dataInicio\": \"2024-01-30T11:00:00.000+00:00\",\r\n    \"dataFim\": \"2024-01-30T15:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reserva/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir-Mesa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"pessoa\": {\r\n            \"id\": 1,\r\n            \"nome\": \"João da Silva\",\r\n            \"cpf\": \"67107207059\"\r\n        },\r\n        \"mesa\": {\r\n            \"id\": 15\r\n        },\r\n        \"sala\": null,\r\n        \"vaga\": null,\r\n        \"dataInicio\": \"2024-01-29T11:00:00.000+00:00\",\r\n        \"dataFim\": \"2024-01-29T15:00:00.000+00:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reserva/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir-Vaga",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pessoa\": {\r\n        \"id\": 1,\r\n        \"nome\": \"João da Silva\",\r\n        \"cpf\": \"67107207059\"\r\n    },\r\n    \"mesa\": null,\r\n    \"sala\": null,\r\n    \"vaga\": {\r\n        \"id\": 1,\r\n        \"codigo\": \"A\",\r\n        \"possuiCarregador\": false,\r\n        \"ativo\": false,\r\n        \"tipo\": \"Moto\"\r\n    },\r\n    \"dataInicio\": \"2024-01-30T11:00:00.000+00:00\",\r\n    \"dataFim\": \"2024-01-30T15:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reserva/incluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 28,\r\n    \"pessoa\": {\r\n        \"id\": 1,\r\n        \"nome\": \"João da Silva\",\r\n        \"cpf\": \"67107207059\"\r\n    },\r\n    \"mesa\": null,\r\n    \"sala\": null,\r\n    \"vaga\": {\r\n        \"id\": 1,\r\n        \"codigo\": \"A\",\r\n        \"possuiCarregador\": false,\r\n        \"ativo\": false,\r\n        \"tipo\": \"Moto\"\r\n    },\r\n    \"dataInicio\": \"2024-01-30T10:00:00.000+00:00\",\r\n    \"dataFim\": \"2024-01-30T15:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reserva/alterar",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reserva/28/excluir",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"28",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reserva/27",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reserva",
+								"27"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

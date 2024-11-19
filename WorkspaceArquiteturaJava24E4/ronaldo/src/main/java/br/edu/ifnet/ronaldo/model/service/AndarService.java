@@ -8,19 +8,14 @@ import org.springframework.stereotype.Service;
 
 import br.edu.ifnet.ronaldo.Constants;
 import br.edu.ifnet.ronaldo.exceptions.AndarNaoEncontradoException;
-import br.edu.ifnet.ronaldo.exceptions.EscritorioNaoEncontradoException;
 import br.edu.ifnet.ronaldo.model.domain.Andar;
-import br.edu.ifnet.ronaldo.model.domain.Escritorio;
 import br.edu.ifnet.ronaldo.model.repository.AndarRepository;
-import br.edu.ifnet.ronaldo.model.repository.EscritorioRepository;
 
 @Service
 public class AndarService {
 	
 	@Autowired
 	private AndarRepository andarRepository;
-	@Autowired
-	private EscritorioRepository escritorioRepository;
 	
 	public Andar incluir(Andar andar) {
 		return andarRepository.save(andar);
@@ -49,8 +44,7 @@ public class AndarService {
 		return (Collection<Andar>) andarRepository.findAll(Sort.by(Sort.Order.asc("numero")));
 	}
 	
-	public Andar findByNumeroAndEscritorio(int numero, String cepEndereco, int numeroEndereco) {
-		Escritorio escritorio = escritorioRepository.findByEndereco_CepAndEndereco_Numero(cepEndereco, numeroEndereco);
-		return andarRepository.findByNumeroAndEscritorio_Id(numero, escritorio.getId());
+	public Andar findByNumeroAndEscritorio(Integer numero, Integer escritorioId) {
+		return andarRepository.findByNumeroAndEscritorio_Id(numero, escritorioId);
 	}
 }

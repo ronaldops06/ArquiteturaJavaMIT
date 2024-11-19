@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import br.edu.ifnet.ronaldo.exceptions.AndarNaoEncontradoException;
 import br.edu.ifnet.ronaldo.exceptions.EscritorioNaoEncontradoException;
 import br.edu.ifnet.ronaldo.exceptions.MesaNaoEncontradaException;
+import br.edu.ifnet.ronaldo.exceptions.PessoaNaoEncontradaException;
+import br.edu.ifnet.ronaldo.exceptions.ReservaNaoEncontradaException;
 import br.edu.ifnet.ronaldo.exceptions.SalaNaoEncontradaException;
 import br.edu.ifnet.ronaldo.exceptions.VagaNaoEncontradaException;
 
@@ -57,6 +59,18 @@ public class GlobalExceptionHandler {
 	
 	@ExceptionHandler(MesaNaoEncontradaException.class)
 	public ResponseEntity<Object> handleValidationExceptions(MesaNaoEncontradaException ex) {
+
+		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler(PessoaNaoEncontradaException.class)
+	public ResponseEntity<Object> handleValidationExceptions(PessoaNaoEncontradaException ex) {
+
+		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler(ReservaNaoEncontradaException.class)
+	public ResponseEntity<Object> handleValidationExceptions(ReservaNaoEncontradaException ex) {
 
 		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
 	}

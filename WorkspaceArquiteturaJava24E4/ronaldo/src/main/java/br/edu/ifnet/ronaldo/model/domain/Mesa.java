@@ -1,7 +1,5 @@
 package br.edu.ifnet.ronaldo.model.domain;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
@@ -11,8 +9,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
@@ -36,14 +32,6 @@ public class Mesa {
 	@JsonBackReference
 	private SalaEscritorio salaEscritorio;
 		
-	@ManyToMany
-    @JoinTable(
-        name = "TMESA_EQUIPAMENTO", 
-        joinColumns = @JoinColumn(name = "mesa_id"), 
-        inverseJoinColumns = @JoinColumn(name = "equipamento_id")
-    )
-	private List<Equipamento> equipamentos;
-	
 	public Integer getId() {
 		return id;
 	}
@@ -68,11 +56,5 @@ public class Mesa {
 	}
 	public void setSalaEscritorio(SalaEscritorio salaEscritorio) {
 		this.salaEscritorio = salaEscritorio;
-	}
-	public List<Equipamento> getEquipamentos() {
-		return equipamentos;
-	}
-	public void setEquipamentos(List<Equipamento> equipamentos) {
-		this.equipamentos = equipamentos;
 	}
 }

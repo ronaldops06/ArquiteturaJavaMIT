@@ -4,9 +4,6 @@ import java.util.Optional;
 
 import org.springframework.data.domain.Sort;
 
-import br.edu.ifnet.ronaldo.model.domain.SalaGaragem;
-
-
 public interface SalaRepository<T>{
 	T findByNomeAndAndar_Id(String nome, long andarId);
 	

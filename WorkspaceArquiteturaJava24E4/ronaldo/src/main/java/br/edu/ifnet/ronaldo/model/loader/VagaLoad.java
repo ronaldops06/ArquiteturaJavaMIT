@@ -3,18 +3,29 @@ package br.edu.ifnet.ronaldo.model.loader;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+import br.edu.ifnet.ronaldo.model.domain.Andar;
+import br.edu.ifnet.ronaldo.model.domain.Escritorio;
 import br.edu.ifnet.ronaldo.model.domain.SalaGaragem;
 import br.edu.ifnet.ronaldo.model.domain.TipoVaga;
 import br.edu.ifnet.ronaldo.model.domain.Vaga;
+import br.edu.ifnet.ronaldo.model.service.AndarService;
+import br.edu.ifnet.ronaldo.model.service.EscritorioService;
 import br.edu.ifnet.ronaldo.model.service.SalaGaragemService;
 import br.edu.ifnet.ronaldo.model.service.VagaService;
 
 public class VagaLoad {
 	
+	private EscritorioService escritorioService;
+	private AndarService andarService;
 	private SalaGaragemService salaGaragemService;
 	private VagaService vagaService;
 	
-	public VagaLoad(SalaGaragemService salaGaragemService, VagaService vagaService) {
+	public VagaLoad(EscritorioService escritorioService,
+	        		AndarService andarService,
+	        		SalaGaragemService salaGaragemService,
+	        		VagaService vagaService) {
+		this.escritorioService = escritorioService;
+		this.andarService = andarService;
 		this.salaGaragemService = salaGaragemService;
 		this.vagaService = vagaService;
 	}
@@ -43,8 +54,10 @@ public class VagaLoad {
 			vaga.setPossuiCarregador(Boolean.parseBoolean(campos[2]));
 			vaga.setAtivo(Boolean.parseBoolean(campos[3]));
 			
-			SalaGaragem sala = salaGaragemService.findByNomeAndAndarAndEscritorio(campos[7], Integer.parseInt(campos[6]), campos[4], Integer.parseInt(campos[5]));
-			vaga.setSalaGaragem(sala);
+			Escritorio escritorio = escritorioService.findByEndereco(campos[4], Integer.parseInt(campos[5]));
+			Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[6]), escritorio.getId());
+			SalaGaragem salaGaragem = salaGaragemService.findByNomeAndAndar(campos[7], andar.getId());
+			vaga.setSalaGaragem(salaGaragem);
 			
 			vagaService.incluir(vaga);
 			

@@ -7,7 +7,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import br.edu.ifnet.ronaldo.Constants;
-import br.edu.ifnet.ronaldo.exceptions.EscritorioNaoEncontradoException;
 import br.edu.ifnet.ronaldo.exceptions.VagaNaoEncontradaException;
 import br.edu.ifnet.ronaldo.model.domain.Vaga;
 import br.edu.ifnet.ronaldo.model.repository.VagaRepository;
@@ -42,5 +41,9 @@ public class VagaService {
 	
 	public Collection<Vaga> obterLista(){
 		return (Collection<Vaga>) vagaRespository.findAll(Sort.by(Sort.Order.asc("codigo")));
-	}	
+	}
+	
+	public Vaga findByCodigoAndSala(String codigo, Integer salaId) {
+		return vagaRespository.findByCodigoAndSalaGaragem_Id(codigo, salaId);
+	}
 }

@@ -4,14 +4,10 @@ import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Service;
 
 import br.edu.ifnet.ronaldo.Constants;
 import br.edu.ifnet.ronaldo.exceptions.SalaNaoEncontradaException;
-import br.edu.ifnet.ronaldo.model.domain.Andar;
 import br.edu.ifnet.ronaldo.model.domain.Sala;
-import br.edu.ifnet.ronaldo.model.domain.SalaGaragem;
 import br.edu.ifnet.ronaldo.model.repository.SalaRepository;
 
 public abstract class SalaService<T extends Sala> {
@@ -53,8 +49,7 @@ public abstract class SalaService<T extends Sala> {
 		return (Collection<T>) salaRepository.findAll(Sort.by(Sort.Order.asc("nome")));
 	}
 	
-	public T findByNomeAndAndarAndEscritorio(String nome, Integer numeroAndar, String cepEndereco, Integer numeroEndereco) {
-		Andar andar = andarService.findByNumeroAndEscritorio(numeroAndar, cepEndereco, numeroEndereco);
-		return salaRepository.findByNomeAndAndar_Id(nome, andar.getId());
+	public T findByNomeAndAndar(String nome, Integer andarId) {
+		return salaRepository.findByNomeAndAndar_Id(nome, andarId);
 	}
 }

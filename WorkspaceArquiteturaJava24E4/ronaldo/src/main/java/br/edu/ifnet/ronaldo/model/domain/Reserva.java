@@ -6,8 +6,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "TRESERVA")
@@ -16,16 +17,24 @@ public class Reserva {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	@Transient
+	
+	@ManyToOne
+	@JoinColumn(name = "pessoa_id", nullable = false)
 	private Pessoa pessoa;
-	@Transient
+	
+	@ManyToOne
+	@JoinColumn(name = "mesa_id")
 	private Mesa mesa;
-	@Transient
+	
+	@ManyToOne
+	@JoinColumn(name = "sala_id")
 	private Sala sala;
-	@Transient
+	
+	@ManyToOne
+	@JoinColumn(name = "vaga_id")
 	private Vaga vaga;
-	private Date DataInicio;
-	private Date DataFim;
+	private Date dataInicio;
+	private Date dataFim;
 	
 	
 	public Integer getId() {
@@ -59,15 +68,15 @@ public class Reserva {
 		this.vaga = vaga;
 	}
 	public Date getDataInicio() {
-		return DataInicio;
+		return dataInicio;
 	}
 	public void setDataInicio(Date dataInicio) {
-		DataInicio = dataInicio;
+		this.dataInicio = dataInicio;
 	}
 	public Date getDataFim() {
-		return DataFim;
+		return dataFim;
 	}
 	public void setDataFim(Date dataFim) {
-		DataFim = dataFim;
+		this.dataFim = dataFim;
 	}
 }

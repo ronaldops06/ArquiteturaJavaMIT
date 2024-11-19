@@ -1,0 +1,7 @@
+//Nome;CPF
+João da Silva;67107207059
+Lucas Amaral;62987294026
+Sabrina Bittencurt;14193296008
+Leoncio Dorneles da Silva;91877172049
+Pedro Lucas da Rocha;95105767004
+Fátima Scopel;17541014028

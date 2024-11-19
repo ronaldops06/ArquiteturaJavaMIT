@@ -8,6 +8,7 @@ import java.util.Locale;
 import org.springframework.stereotype.Component;
 
 import br.edu.ifnet.ronaldo.model.domain.Andar;
+import br.edu.ifnet.ronaldo.model.domain.Escritorio;
 import br.edu.ifnet.ronaldo.model.domain.SalaAuditorio;
 import br.edu.ifnet.ronaldo.model.domain.SalaEscritorio;
 import br.edu.ifnet.ronaldo.model.domain.SalaFesta;
@@ -15,6 +16,7 @@ import br.edu.ifnet.ronaldo.model.domain.SalaGaragem;
 import br.edu.ifnet.ronaldo.model.domain.SalaReuniao;
 import br.edu.ifnet.ronaldo.model.domain.TipoSala;
 import br.edu.ifnet.ronaldo.model.service.AndarService;
+import br.edu.ifnet.ronaldo.model.service.EscritorioService;
 import br.edu.ifnet.ronaldo.model.service.SalaAuditorioService;
 import br.edu.ifnet.ronaldo.model.service.SalaEscritorioService;
 import br.edu.ifnet.ronaldo.model.service.SalaFestaService;
@@ -23,6 +25,7 @@ import br.edu.ifnet.ronaldo.model.service.SalaReuniaoService;
 
 @Component
 public class SalaLoad {
+	private EscritorioService escritorioService;
 	private AndarService andarService;
 	private SalaAuditorioService salaAuditorioService;
 	private SalaEscritorioService salaEscritorioService;
@@ -31,7 +34,8 @@ public class SalaLoad {
 	private SalaReuniaoService salaReuniaoService;
 	private SimpleDateFormat formatter;
 	
-	public SalaLoad(AndarService andarService, 
+	public SalaLoad(EscritorioService escritorioService,
+			        AndarService andarService, 
 			        SalaAuditorioService salaAuditorioService, 
 			        SalaEscritorioService salaEscritorioService,
 			        SalaFestaService salaFestaService,
@@ -43,6 +47,7 @@ public class SalaLoad {
 		this.salaFestaService = salaFestaService;
 		this.salaGaragemService = salaGaragemService;
 		this.salaReuniaoService = salaReuniaoService;
+		this.escritorioService = escritorioService;
 	}
 	
 	protected void loadSalas() throws Exception {
@@ -107,7 +112,8 @@ public class SalaLoad {
 			sala.setHoraMaximaReserva(formatter.parse(campos[6]));
 		}
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
+		Escritorio escritorio = escritorioService.findByEndereco(campos[7], Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), escritorio.getId());
 		sala.setAndar(andar);
 		
 		salaAuditorioService.incluir(sala);
@@ -120,7 +126,8 @@ public class SalaLoad {
 		sala.setAtivo(Boolean.parseBoolean(campos[2]));
 		sala.setTipo(tipoSala);
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
+		Escritorio escritorio = escritorioService.findByEndereco(campos[7], Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), escritorio.getId());
 		sala.setAndar(andar);
 		
 		salaEscritorioService.incluir(sala);
@@ -142,7 +149,8 @@ public class SalaLoad {
 			sala.setHoraMaximaReserva(formatter.parse(campos[6]));
 		}
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
+		Escritorio escritorio = escritorioService.findByEndereco(campos[7], Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), escritorio.getId());
 		sala.setAndar(andar);
 		
 		salaFestaService.incluir(sala);
@@ -155,7 +163,8 @@ public class SalaLoad {
 		sala.setAtivo(Boolean.parseBoolean(campos[2]));
 		sala.setTipo(tipoSala);		
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
+		Escritorio escritorio = escritorioService.findByEndereco(campos[7], Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), escritorio.getId());
 		sala.setAndar(andar);
 		
 		salaGaragemService.incluir(sala);
@@ -171,7 +180,8 @@ public class SalaLoad {
 			sala.setTempoMaximoReserva(Integer.parseInt(campos[4]));
 		}
 		
-		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), campos[7], Integer.parseInt(campos[8]));
+		Escritorio escritorio = escritorioService.findByEndereco(campos[7], Integer.parseInt(campos[8]));
+		Andar andar = andarService.findByNumeroAndEscritorio(Integer.parseInt(campos[9]), escritorio.getId());
 		sala.setAndar(andar);
 		
 		salaReuniaoService.incluir(sala);
